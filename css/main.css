@@ -1,0 +1,38 @@
+/* General setting */
+body {
+    background-image: url(../images/Background.png);
+    background-repeat: no-repeat;
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    color: #322c2c;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+
+/* Header */
+header > h1 {
+    text-align: center;
+    background-image :url(../images/Main-Header.png);
+    color: hsl(0, 2%, 19%);
+    font-size: 80px;
+    font-family: "DM Sans", sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 30px;
+}
+
+header span {
+    border: none;
+    border-radius: 20px;
+    padding-left: 50px;
+    padding-right: 30px;
+    background-color: rgba(255, 255, 255, 0.865)
+}
+
+header span::after {
+    content: "📃";
+}
