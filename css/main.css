@@ -111,14 +111,25 @@ input {
     cursor: pointer;
   }
 
-input[type="checkbox"]:checked + span::after {
+.todo input[type="checkbox"]:checked + span::after {
     content:"✅";
+    margin-left: 5px;
+}
+
+.inprogress input[type="checkbox"]:checked + span::after {
+    content:"👌";
+    margin-left: 5px;
+}
+
+.done input[type="checkbox"]:checked + span::after {
+    content:"🎉";
     margin-left: 5px;
 }
 
 /* To Dos */
 .todo li:nth-child(odd) {
     background-color: rgba(88, 87, 87, 0.884);
+    color: white;
 }
 
 .todo li:nth-child(even) {
@@ -145,6 +156,7 @@ input[type="checkbox"]:checked + span::after {
 /* In-progress */
 .inprogress li:nth-child(odd) {
     background-color: rgba(227, 193, 193, 0.884);
+    color:#ce4747;
 }
 
 .inprogress li:nth-child(even) {
@@ -171,6 +183,7 @@ input[type="checkbox"]:checked + span::after {
 /* Done */
 .done li:nth-child(odd) {
     background-color: rgba(138, 221, 225, 0.884);
+    color:rgb(17, 19, 177);
 }
 
 .done li:nth-child(even) {
